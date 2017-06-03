@@ -57,7 +57,7 @@
 
     <dependency>
         <groupId>org.ini4j</groupId>
-        <artifactId>ini4j</artifactID>
+        <artifactId>ini4j</artifactId>
         <version>X.Y.Z</version>
     </dependency>
 
