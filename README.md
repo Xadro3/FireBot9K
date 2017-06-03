@@ -1,8 +1,8 @@
-#FireBot9K
+# FireBot9K
 
-A simple java discord bot built by small collective of internet ~~wierdos~~ heroes~
+A simple java discord bot built by small collective of internet ~~wierdos~~ heroes
 
-##Features
+## Features
 
 * Responding to messages, duh.
 * Reddit integration
