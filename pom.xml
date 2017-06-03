@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -63,4 +64,73 @@
     </dependencies>
 
 
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fire.bot</groupId>
+    <artifactId>fireBot</artifactId>
+    <version>0.1</version>
+
+    <repositories>
+        <repository>
+            <id>sonatype-snapshot</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+
+
+    <repository>
+        <id>jcenter</id>
+        <url>https://jcenter.bintray.com</url>
+    </repository>
+
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+
+    <dependency>
+        <groupId>com.github.austinv11</groupId>
+        <artifactId>Discord4J</artifactId>
+        <version>2.8.2</version>
+     <classifier>shaded</classifier>
+    </dependency>
+
+        <dependency>
+
+            <groupId>net.dean.jraw</groupId>
+            <artifactId>JRAW</artifactId>
+            <version>0.9.0</version>
+
+        </dependency>
+
+        <dependency>
+            <groupId>io.hotmeatballsoup</groupId>
+            <artifactId>dotenv-java</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+
+    <dependency>
+        <groupId>com.github.dwursteisen</groupId>
+        <artifactId>image-api</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.ini4j</groupId>
+        <artifactId>ini4j</artifactId>
+        <version>X.Y.Z</version>
+    </dependency>
+
+
+</dependencies>
+
+
+>>>>>>> 6fa3756d2f2febc46043c2d3b0679d439989d1e6
 </project>
