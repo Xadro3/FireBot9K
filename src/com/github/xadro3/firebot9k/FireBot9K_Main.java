@@ -8,7 +8,7 @@ import sx.blah.discord.api.IDiscordClient;
 public class FireBot9K_Main {
     public static void main(String[] args) {
 
-         String token = "MzAwNjc2MDU1NTQ1NTQ0NzA5.DBRe_Q.wC8fmszEySTndL5GDiVOOHqH414";
+         String token = "yor token here";
 
     IDiscordClient client = BotUtils.getBuiltDiscordClient(token);
 
