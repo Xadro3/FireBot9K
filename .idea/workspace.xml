@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f6f1bfd1-f114-4196-9055-dc86cb220b64" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FireBot9K.iml" afterPath="$PROJECT_DIR$/FireBot9K.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +21,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            <state relative-caret-position="1088">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -635,7 +636,7 @@
       <option name="presentableId" value="Default" />
       <updated>1496493098134</updated>
       <workItem from="1496493100947" duration="221000" />
-      <workItem from="1496493380495" duration="4790000" />
+      <workItem from="1496493380495" duration="4996000" />
     </task>
     <task id="LOCAL-00001" summary="Pom.xml">
       <created>1496497898217</created>
@@ -658,11 +659,25 @@
       <option name="project" value="LOCAL" />
       <updated>1496498393425</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pom.xml">
+      <created>1496498515123</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496498515123</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge branch 'master' of https://github.com/fabiomim/FireBot9K&#10;&#10;# Conflicts:&#10;#&#9;pom.xml">
+      <created>1496498588447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496498588447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5011000" />
+    <option name="totallyTimeSpent" value="5217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -707,7 +722,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pom.xml" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/fabiomim/FireBot9K&#10;&#10;# Conflicts:&#10;#&#9;pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/fabiomim/FireBot9K&#10;&#10;# Conflicts:&#10;#&#9;pom.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -728,8 +744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        <state relative-caret-position="1088">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
