@@ -31,6 +31,7 @@ nbdist/
 # User-specific stuff:
 .idea/**/workspace.xml
 .idea/**/tasks.xml
+.idea/**/misc.xml
 .idea/dictionaries
 
 # Sensitive or high-churn files:

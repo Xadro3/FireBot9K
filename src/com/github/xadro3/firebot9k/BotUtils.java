@@ -29,7 +29,7 @@ static void sendMessage (final IChannel channel, final String message) {
         try {
             channel.sendMessage(message);
         } catch (DiscordException e) {
-            System.err.println("Message could not be sent with error: ");
+            LoggerService.log("Message could not be sent with error: ",LoggerService.ERROR);
             e.printStackTrace();
         }
     });
