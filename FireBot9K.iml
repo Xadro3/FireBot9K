@@ -46,10 +46,10 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.guava:guava:19.0" level="project" />
-    <orderEntry type="library" name="Maven: io.hotmeatballsoup:dotenv-java:0.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.github.dwursteisen:image-api:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.1" level="project" />
     <orderEntry type="library" name="Maven: org.scribe:scribe:1.3.1" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.8.2" level="project" />
+    <orderEntry type="library" name="Maven: org.ini4j:ini4j:0.5.2" level="project" />
   </component>
 </module>
