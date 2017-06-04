@@ -5,9 +5,7 @@ import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedE
 import sx.blah.discord.util.EmbedBuilder;
 import sx.blah.discord.util.RequestBuffer;
 
-/**
- * Created by fabio on 03.06.2017.
- */
+
 public class Events {
 
 
@@ -52,8 +50,13 @@ public class Events {
 
 
         }
+        if(event.getMessage().getContent().startsWith("Reddit")){
+            RedditCommand rcmd = new RedditCommand();
+            rcmd.reddit(event.getMessage().getContent(), event.getChannel());
+        }
 
     }
+
 
 
 }

@@ -1,15 +1,14 @@
 package com.github.xadro3.firebot9k;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by frosfire64 on 03.06.2017.
- */
-public class LoggerService {
+
+
+ class LoggerService {
     private static void logToFile(String message){
 
         try {
@@ -43,7 +42,7 @@ public class LoggerService {
         System.out.println(message);
     }
 
-    public static void log(String message, int type){
+   static void log(String message, int type){
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS ");
         switch (type) {
             case LoggerService.INFO:

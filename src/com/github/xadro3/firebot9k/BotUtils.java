@@ -7,9 +7,7 @@ import sx.blah.discord.handle.obj.IChannel;
 import sx.blah.discord.util.DiscordException;
 import sx.blah.discord.util.RequestBuffer;
 
-/**
- * Created by fabio on 03.06.2017.
- */
+
  class BotUtils {
 
     static String BOT_PREFIX = "!";
