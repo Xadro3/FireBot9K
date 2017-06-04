@@ -8,8 +8,10 @@ import net.dean.jraw.http.oauth.OAuthException;
 import net.dean.jraw.models.Listing;
 import net.dean.jraw.models.Submission;
 import net.dean.jraw.paginators.SubredditPaginator;
+import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 import sx.blah.discord.handle.obj.IChannel;
-
+import sx.blah.discord.util.EmbedBuilder;
+import sx.blah.discord.util.RequestBuffer;
 
 
 /**
@@ -17,7 +19,7 @@ import sx.blah.discord.handle.obj.IChannel;
  */
 public class RedditCommand   {
 
-    public void reddit (String message, IChannel channel) {
+    public void reddit (MessageReceivedEvent event) {
 
 
 
@@ -41,7 +43,7 @@ public class RedditCommand   {
 
             String[] reddarray;
 
-            reddarray = message.split(" ");
+            reddarray = event.getMessage().getContent().split(" ");
 
             paginator.setLimit(5);
 
@@ -53,8 +55,21 @@ public class RedditCommand   {
 
                 for (Submission s : submissions) {
 
-                    BotUtils.sendMessage(channel," \n" + " \n" + " \n" + " \n" + "**" + s.getTitle() + "**" + "\n" + s.getUrl() + "\n" + "**" + s.getScore() + " Punkte." + "**"
-                            + "\n" + "**/r/" + s.getSubredditName() + "**");
+                    EmbedBuilder ebuilder = new EmbedBuilder();
+
+                    ebuilder.appendField(s.getTitle(),"",true);
+                    ebuilder.appendField("Score",s.getScore().toString(),true);
+
+                    ebuilder.withAuthorName("posted by "+s.getAuthor());
+
+
+
+
+
+                    RequestBuffer.request(() -> event.getChannel().sendMessage(ebuilder.build()));
+
+
+
 
                 }
 
@@ -64,7 +79,7 @@ public class RedditCommand   {
 
                 for (Submission s : submissions) {
 
-                    BotUtils.sendMessage(channel," \n" + " \n" + " \n" + " \n" + "**" + s.getTitle() + "**" + "\n" + s.getUrl() + "\n" + "**" + s.getScore() + " Punkte." + "**");
+                    BotUtils.sendMessage(event.getChannel()," \n" + " \n" + " \n" + " \n" + "**" + s.getTitle() + "**" + "\n" + s.getUrl() + "\n" + "**" + s.getScore() + " Punkte." + "**");
 
                 }
             }

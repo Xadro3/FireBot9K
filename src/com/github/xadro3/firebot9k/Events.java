@@ -1,5 +1,6 @@
 package com.github.xadro3.firebot9k;
 
+
 import sx.blah.discord.api.events.EventSubscriber;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 import sx.blah.discord.util.EmbedBuilder;
@@ -52,7 +53,7 @@ public class Events {
         }
         if(event.getMessage().getContent().startsWith("Reddit")){
             RedditCommand rcmd = new RedditCommand();
-            rcmd.reddit(event.getMessage().getContent(), event.getChannel());
+            rcmd.reddit(event);
         }
 
     }
