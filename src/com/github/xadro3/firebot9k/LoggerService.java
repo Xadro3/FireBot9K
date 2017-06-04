@@ -63,6 +63,10 @@ import java.util.Date;
         LoggerService.logToConsole(message,type);
     }
 
+    public static void log(String message){
+        LoggerService.log(message,LoggerService.INFO);
+    }
+
     static final int INFO = 1;
     static final int ERROR = 2;
     static final int SUCCESS = 3;

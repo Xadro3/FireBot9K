@@ -77,7 +77,7 @@ crashlytics-build.properties
 fabric.properties
 
 # Ini file
-.ini
+*.ini
 
 
 
