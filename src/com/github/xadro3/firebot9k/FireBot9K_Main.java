@@ -10,14 +10,9 @@ import com.github.xadro3.firebot9k.LoggerService;
  */
 public class FireBot9K_Main {
     public static void main(String[] args) {
+        Configuration config = Configuration.getInstance();
 
-
-
-
-
-         String token = "Your Token here";      //This is still harcoded since  we are still working on a .ini implementation for our settings
-
-
+        String token = config.getToken();      //This is still harcoded since  we are still working on a .ini implementation for our settings
 
         LoggerService.log("success message",LoggerService.SUCCESS);
         LoggerService.log("info message", LoggerService.INFO);
@@ -25,11 +20,7 @@ public class FireBot9K_Main {
 
         IDiscordClient client = BotUtils.getBuiltDiscordClient(token);
 
-
-
         client.getDispatcher().registerListener(new Events());
-
-
 
         try {
             client.login();
