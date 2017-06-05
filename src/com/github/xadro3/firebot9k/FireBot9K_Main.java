@@ -12,7 +12,7 @@ public class FireBot9K_Main {
     public static void main(String[] args) {
         Configuration config = Configuration.getInstance();
 
-        String token = config.getToken();      //This is still harcoded since  we are still working on a .ini implementation for our settings
+        String token = config.getToken();     //Token now in .ini file
 
         LoggerService.log("success message",LoggerService.SUCCESS);
         LoggerService.log("info message", LoggerService.INFO);

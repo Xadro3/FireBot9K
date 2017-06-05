@@ -36,3 +36,93 @@
 2017-06-04 21:04:24.285 SUCC - success message
 2017-06-04 21:04:24.286 INFO - info message
 2017-06-04 21:04:24.287 ERRO - error message
+2017-06-05 01:55:11.995 INFO - Reading the data from the settings.ini file.
+2017-06-05 01:55:12.143 SUCC - Data from settings.ini is loaded.
+2017-06-05 01:55:12.145 SUCC - success message
+2017-06-05 01:55:12.148 INFO - info message
+2017-06-05 01:55:12.151 ERRO - error message
+2017-06-05 01:58:37.610 INFO - Reading the data from the settings.ini file.
+2017-06-05 01:58:37.669 SUCC - Data from settings.ini is loaded.
+2017-06-05 01:58:37.670 SUCC - success message
+2017-06-05 01:58:37.671 INFO - info message
+2017-06-05 01:58:37.672 ERRO - error message
+2017-06-05 01:59:52.207 INFO - Reading the data from the settings.ini file.
+2017-06-05 01:59:52.261 SUCC - Data from settings.ini is loaded.
+2017-06-05 01:59:52.262 SUCC - success message
+2017-06-05 01:59:52.263 INFO - info message
+2017-06-05 01:59:52.264 ERRO - error message
+2017-06-05 02:05:37.960 INFO - Reading the data from the settings.ini file.
+2017-06-05 02:05:38.012 SUCC - Data from settings.ini is loaded.
+2017-06-05 02:05:38.013 SUCC - success message
+2017-06-05 02:05:38.014 INFO - info message
+2017-06-05 02:05:38.015 ERRO - error message
+2017-06-05 16:03:55.825 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:03:56.127 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:03:56.128 SUCC - success message
+2017-06-05 16:03:56.129 INFO - info message
+2017-06-05 16:03:56.130 ERRO - error message
+2017-06-05 16:04:50.703 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:04:50.762 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:04:50.763 SUCC - success message
+2017-06-05 16:04:50.764 INFO - info message
+2017-06-05 16:04:50.765 ERRO - error message
+2017-06-05 16:09:31.017 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:09:31.080 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:09:31.081 SUCC - success message
+2017-06-05 16:09:31.081 INFO - info message
+2017-06-05 16:09:31.085 ERRO - error message
+2017-06-05 16:12:54.562 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:12:54.649 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:12:54.650 SUCC - success message
+2017-06-05 16:12:54.651 INFO - info message
+2017-06-05 16:12:54.652 ERRO - error message
+2017-06-05 16:14:52.485 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:14:52.537 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:14:52.538 SUCC - success message
+2017-06-05 16:14:52.539 INFO - info message
+2017-06-05 16:14:52.541 ERRO - error message
+2017-06-05 16:15:58.812 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:15:58.859 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:15:58.860 SUCC - success message
+2017-06-05 16:15:58.861 INFO - info message
+2017-06-05 16:15:58.862 ERRO - error message
+2017-06-05 16:17:25.242 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:17:25.338 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:17:25.340 SUCC - success message
+2017-06-05 16:17:25.341 INFO - info message
+2017-06-05 16:17:25.342 ERRO - error message
+2017-06-05 16:19:21.159 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:19:21.208 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:19:21.209 SUCC - success message
+2017-06-05 16:19:21.210 INFO - info message
+2017-06-05 16:19:21.211 ERRO - error message
+2017-06-05 16:22:55.455 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:22:55.501 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:22:55.503 SUCC - success message
+2017-06-05 16:22:55.504 INFO - info message
+2017-06-05 16:22:55.506 ERRO - error message
+2017-06-05 16:30:44.495 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:30:44.552 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:30:44.552 SUCC - success message
+2017-06-05 16:30:44.556 INFO - info message
+2017-06-05 16:30:44.557 ERRO - error message
+2017-06-05 16:33:29.230 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:33:29.289 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:33:29.290 SUCC - success message
+2017-06-05 16:33:29.291 INFO - info message
+2017-06-05 16:33:29.291 ERRO - error message
+2017-06-05 16:38:18.258 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:38:18.325 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:38:18.326 SUCC - success message
+2017-06-05 16:38:18.327 INFO - info message
+2017-06-05 16:38:18.328 ERRO - error message
+2017-06-05 16:39:09.375 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:39:09.431 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:39:09.432 SUCC - success message
+2017-06-05 16:39:09.433 INFO - info message
+2017-06-05 16:39:09.434 ERRO - error message
+2017-06-05 16:40:22.163 INFO - Reading the data from the settings.ini file.
+2017-06-05 16:40:22.249 SUCC - Data from settings.ini is loaded.
+2017-06-05 16:40:22.250 SUCC - success message
+2017-06-05 16:40:22.251 INFO - info message
+2017-06-05 16:40:22.252 ERRO - error message
