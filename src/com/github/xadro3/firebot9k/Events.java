@@ -4,6 +4,8 @@ package com.github.xadro3.firebot9k;
 import sx.blah.discord.api.events.EventSubscriber;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 
+import static com.github.xadro3.firebot9k.BotUtils.BOT_PREFIX;
+
 
 public class Events {
 
@@ -11,14 +13,14 @@ public class Events {
 
     @EventSubscriber
     public void messageReceived (MessageReceivedEvent event){
-        if(event.getMessage().getContent().startsWith(BotUtils.BOT_PREFIX)){
-            BotUtils.sendMessage(event.getChannel(),"Its a test lol");
+       /** if(event.getMessage().getContent().startsWith(BOT_PREFIX+"ChangePrefix")&& event.getAuthor().getDiscriminator()){
+            //nothing
 
-        }
+        }**/
 
 
 
-        if(event.getMessage().getContent().startsWith("!Reddit")){
+        if(event.getMessage().getContent().startsWith(BOT_PREFIX+"Reddit")){
             RedditCommand rcmd = new RedditCommand();
             rcmd.reddit(event);
         }

@@ -126,3 +126,101 @@
 2017-06-05 16:40:22.250 SUCC - success message
 2017-06-05 16:40:22.251 INFO - info message
 2017-06-05 16:40:22.252 ERRO - error message
+2017-06-06 18:35:47.431 INFO - Reading the data from the settings.ini file.
+2017-06-06 18:35:47.488 SUCC - Data from settings.ini is loaded.
+2017-06-06 18:35:47.489 SUCC - success message
+2017-06-06 18:35:47.489 INFO - info message
+2017-06-06 18:35:47.490 ERRO - error message
+2017-06-06 18:36:00.942 INFO - Reading the data from the settings.ini file.
+2017-06-06 18:36:00.945 SUCC - Data from settings.ini is loaded.
+2017-06-06 18:38:33.859 INFO - Reading the data from the settings.ini file.
+2017-06-06 18:38:34.188 SUCC - Data from settings.ini is loaded.
+2017-06-06 18:38:34.189 SUCC - success message
+2017-06-06 18:38:34.190 INFO - info message
+2017-06-06 18:38:34.190 ERRO - error message
+2017-06-06 18:39:37.936 INFO - Reading the data from the settings.ini file.
+2017-06-06 18:39:38.043 SUCC - Data from settings.ini is loaded.
+2017-06-06 18:39:38.045 SUCC - success message
+2017-06-06 18:39:38.046 INFO - info message
+2017-06-06 18:39:38.047 ERRO - error message
+2017-06-06 18:39:44.900 INFO - Reading the data from the settings.ini file.
+2017-06-06 18:39:44.910 SUCC - Data from settings.ini is loaded.
+2017-06-06 18:40:51.660 INFO - Reading the data from the settings.ini file.
+2017-06-06 18:40:51.727 SUCC - Data from settings.ini is loaded.
+2017-06-06 18:40:51.730 SUCC - success message
+2017-06-06 18:40:51.732 INFO - info message
+2017-06-06 18:40:51.748 ERRO - error message
+2017-06-17 22:10:44.537 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:13:12.206 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:13:12.208 SUCC - success message
+2017-06-17 22:13:12.209 INFO - info message
+2017-06-17 22:13:12.211 ERRO - error message
+2017-06-17 22:13:19.285 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:13:19.342 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:13:19.343 SUCC - success message
+2017-06-17 22:13:19.344 INFO - info message
+2017-06-17 22:13:19.345 ERRO - error message
+2017-06-17 22:13:56.571 INFO - Success: Connect Reddit
+2017-06-17 22:13:58.052 INFO - Ran Reddit successfully
+2017-06-17 22:32:44.810 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:32:44.868 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:32:44.869 SUCC - success message
+2017-06-17 22:32:44.870 INFO - info message
+2017-06-17 22:32:44.871 ERRO - error message
+2017-06-17 22:33:02.971 INFO - Success: Connect Reddit
+2017-06-17 22:33:47.855 INFO - Success: Connect Reddit
+2017-06-17 22:33:50.605 INFO - Ran Reddit successfully
+2017-06-17 22:36:25.607 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:36:25.705 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:36:25.709 SUCC - success message
+2017-06-17 22:36:25.717 INFO - info message
+2017-06-17 22:36:25.718 ERRO - error message
+2017-06-17 22:36:40.923 INFO - Success: Connect Reddit
+2017-06-17 22:38:15.599 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:38:15.655 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:38:15.656 SUCC - success message
+2017-06-17 22:38:15.657 INFO - info message
+2017-06-17 22:38:15.658 ERRO - error message
+2017-06-17 22:38:22.089 INFO - Success: Connect Reddit
+2017-06-17 22:38:23.540 INFO - Ran Reddit successfully
+2017-06-17 22:38:28.472 INFO - Success: Connect Reddit
+2017-06-17 22:38:30.076 INFO - Ran Reddit successfully
+2017-06-17 22:38:37.588 INFO - Success: Connect Reddit
+2017-06-17 22:38:39.217 INFO - Ran Reddit successfully
+2017-06-17 22:39:36.019 INFO - Success: Connect Reddit
+2017-06-17 22:39:37.643 INFO - Ran Reddit successfully
+2017-06-17 22:40:07.183 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:40:07.256 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:40:07.257 SUCC - success message
+2017-06-17 22:40:07.258 INFO - info message
+2017-06-17 22:40:07.259 ERRO - error message
+2017-06-17 22:40:17.257 INFO - Success: Connect Reddit
+2017-06-17 22:40:18.765 INFO - Ran Reddit successfully
+2017-06-17 22:40:25.768 INFO - Success: Connect Reddit
+2017-06-17 22:41:13.746 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:41:13.811 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:41:13.812 SUCC - success message
+2017-06-17 22:41:13.814 INFO - info message
+2017-06-17 22:41:13.815 ERRO - error message
+2017-06-17 22:41:21.307 INFO - Success: Connect Reddit
+2017-06-17 22:41:22.302 INFO - Ran Reddit successfully
+2017-06-17 22:41:27.378 INFO - Success: Connect Reddit
+2017-06-17 22:41:28.998 INFO - Ran Reddit successfully
+2017-06-17 22:41:42.906 INFO - Success: Connect Reddit
+2017-06-17 22:41:45.452 INFO - Ran Reddit successfully
+2017-06-17 22:42:59.276 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:42:59.350 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:42:59.351 SUCC - success message
+2017-06-17 22:42:59.352 INFO - info message
+2017-06-17 22:42:59.353 ERRO - error message
+2017-06-17 22:43:08.593 INFO - Success: Connect Reddit
+2017-06-17 22:43:09.453 INFO - Ran Reddit successfully
+2017-06-17 22:43:13.711 INFO - Success: Connect Reddit
+2017-06-17 22:43:16.324 INFO - Ran Reddit successfully
+2017-06-17 22:45:29.001 INFO - Reading the data from the settings.ini file.
+2017-06-17 22:45:29.069 SUCC - Data from settings.ini is loaded.
+2017-06-17 22:45:29.070 SUCC - success message
+2017-06-17 22:45:29.071 INFO - info message
+2017-06-17 22:45:29.072 ERRO - error message
+2017-06-17 22:45:38.626 INFO - Success: Connect Reddit
+2017-06-17 22:45:40.148 INFO - Ran Reddit successfully

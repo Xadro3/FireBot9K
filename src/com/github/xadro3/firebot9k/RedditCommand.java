@@ -20,20 +20,26 @@ public class RedditCommand {
 
     public void reddit(MessageReceivedEvent event) {
 
+        Configuration cfg = Configuration.getInstance();
 
-        UserAgent myUserAgent = UserAgent.of("platform", "com.github.xadro3.firebot9k", "v0.1", "redditUsername");
+
+
+
+        UserAgent myUserAgent = UserAgent.of("platform", "com.github.xadro3.firebot9k", "v0.1", "FireBot9K");
 
         final RedditClient redditClient = new RedditClient(myUserAgent);
 
-        Credentials credentials = Credentials.script("usrname", "password", "clientID", "clientSecret");
+        Credentials credentials = Credentials.script(cfg.getUsrname(), cfg.getPassword(), cfg.getClientID(), cfg.getcSecret());
 
         OAuthData authData = null;
 
         try {
             authData = redditClient.getOAuthHelper().easyAuth(credentials);
         } catch (OAuthException e) {
+            LoggerService.log("Reddit not Connected");
             e.printStackTrace();
         }
+        LoggerService.log("Success: Connect Reddit");
 
         SubredditPaginator paginator = new SubredditPaginator(redditClient);
 
@@ -43,8 +49,15 @@ public class RedditCommand {
 
         reddarray = event.getMessage().getContent().split(" ");
 
+        if (reddarray.length>2 && Character.getNumericValue(reddarray[2].toString().charAt(0)) <= 3){
+            int help = Character.getNumericValue(reddarray[2].charAt(0));
+            paginator.setLimit(help);
+        }
+        else {
+            paginator.setLimit(1);
 
-        paginator.setLimit(3);
+        }
+
 
         paginator.setSubreddit(reddarray[1]);
 
@@ -113,6 +126,7 @@ public class RedditCommand {
                 RequestBuffer.request(() -> event.getChannel().sendMessage(ebuilder.build()));
             }
         }
+        LoggerService.log("Ran Reddit successfully");
 
     }
 }
