@@ -224,3 +224,17 @@
 2017-06-17 22:45:29.072 ERRO - error message
 2017-06-17 22:45:38.626 INFO - Success: Connect Reddit
 2017-06-17 22:45:40.148 INFO - Ran Reddit successfully
+2017-06-17 23:14:51.651 INFO - Reading the data from the settings.ini file.
+2017-06-17 23:14:51.701 SUCC - Data from settings.ini is loaded.
+2017-06-17 23:14:51.703 SUCC - success message
+2017-06-17 23:14:51.704 INFO - info message
+2017-06-17 23:14:51.705 ERRO - error message
+2017-06-17 23:15:15.280 INFO - Success: Connect Reddit
+2017-06-17 23:15:16.722 INFO - Ran Reddit successfully
+2017-06-17 23:25:37.310 INFO - Reading the data from the settings.ini file.
+2017-06-17 23:25:37.343 SUCC - Data from settings.ini is loaded.
+2017-06-17 23:25:37.344 SUCC - success message
+2017-06-17 23:25:37.346 INFO - info message
+2017-06-17 23:25:37.348 ERRO - error message
+2017-06-17 23:25:57.649 INFO - Success: Connect Reddit
+2017-06-17 23:25:59.242 INFO - Ran Reddit successfully
