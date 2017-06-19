@@ -22,12 +22,16 @@ public class FireBot9K_Main {
 
         client.getDispatcher().registerListener(new Events());
 
+
+
         try {
             client.login();
         } catch (DiscordException e){
             System.err.print("Login error: ");
             e.printStackTrace();
         }
+
+
 
     }
 
