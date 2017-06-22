@@ -27,7 +27,14 @@ public class Configuration {
     private String password;
     private String clientID;
     private String cSecret;
+    private String prefix;
+    private String flickrAPIKey;
+    private String flickrAPISecret;
 
+
+    public String getPrefix() {
+        return prefix;
+    }
 
     public String getToken() {
         return token;
@@ -49,6 +56,14 @@ public class Configuration {
         return cSecret;
     }
 
+    public String getFlickrAPIKey() {
+        return flickrAPIKey;
+    }
+
+    public String getFlickrAPISecret() {
+        return flickrAPISecret;
+    }
+
     protected Configuration()
     {
         LoggerService.log("Reading the data from the settings.ini file.");
@@ -65,7 +80,9 @@ public class Configuration {
             this.password = iniFile.get("RedditCredentials", "password", String.class);
             this.clientID = iniFile.get("RedditCredentials", "clientID", String.class);
             this.cSecret = iniFile.get("RedditCredentials", "cSecret", String.class);
-
+            this.prefix = iniFile.get("BotPrefix","prefix",String.class);
+            this.flickrAPIKey= iniFile.get("Flickr/Imgur Auth keys", "flickrAPIKey",String.class);
+            this.flickrAPISecret= iniFile.get("Flickr/Imgur Auth keys", "flickrAPISecret",String.class);
         } catch (Exception e) {
             LoggerService.log(e.getMessage(),LoggerService.ERROR);
             return;

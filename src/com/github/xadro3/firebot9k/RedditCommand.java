@@ -23,8 +23,6 @@ public class RedditCommand {
         Configuration cfg = Configuration.getInstance();
 
 
-
-
         UserAgent myUserAgent = UserAgent.of("platform", "com.github.xadro3.firebot9k", "v0.1", "FireBot9K");
 
         final RedditClient redditClient = new RedditClient(myUserAgent);
@@ -49,11 +47,10 @@ public class RedditCommand {
 
         reddarray = event.getMessage().getContent().split(" ");
 
-        if (reddarray.length>2 && Character.getNumericValue(reddarray[2].toString().charAt(0)) <= 3){
+        if (reddarray.length > 2 && Character.getNumericValue(reddarray[2].toString().charAt(0)) <= 3) {
             int help = Character.getNumericValue(reddarray[2].charAt(0));
             paginator.setLimit(help);
-        }
-        else {
+        } else {
             paginator.setLimit(1);
 
         }
@@ -86,6 +83,7 @@ public class RedditCommand {
                 ebuilder.withTitle(s.getTitle());
                 ebuilder.withTimestamp(s.getCreated().getTime());
                 ebuilder.withUrl(s.getUrl());
+                ebuilder.withColor(255, 127, 71);
 
 
                 ebuilder.appendDesc("[" + "/r/" + s.getSubredditName() + "]" + "(" + "https://www.reddit.com/r/" + s.getSubredditName() + ")");
@@ -104,7 +102,7 @@ public class RedditCommand {
 
 
                 EmbedBuilder ebuilder = new EmbedBuilder();
-
+                ebuilder.withColor(255, 127, 71);
 
                 ebuilder.appendField("Score", s.getScore().toString() + " Points", false);
                 ebuilder.withFooterText("posted by /u/" + s.getAuthor());
