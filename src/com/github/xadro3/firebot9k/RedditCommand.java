@@ -82,7 +82,7 @@ public class RedditCommand {
 
                 ebuilder.withTitle(s.getTitle());
                 ebuilder.withTimestamp(s.getCreated().getTime());
-                ebuilder.withUrl(s.getUrl());
+                ebuilder.withUrl(s.getShortURL());
                 ebuilder.withColor(255, 127, 71);
 
 
@@ -118,7 +118,7 @@ public class RedditCommand {
 
                 ebuilder.withTitle(s.getTitle());
                 ebuilder.withTimestamp(s.getCreated().getTime());
-                ebuilder.withUrl(s.getUrl());
+                ebuilder.withUrl(s.getShortURL());
 
 
                 RequestBuffer.request(() -> event.getChannel().sendMessage(ebuilder.build()));
