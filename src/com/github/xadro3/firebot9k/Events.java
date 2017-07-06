@@ -36,7 +36,7 @@ public class Events {
          }**/
 
 
-        if (message.equals("!help")) {
+        if (message.toUpperCase().equals("!HELP")) {
 
             EmbedBuilder embedBuilder = new EmbedBuilder();
 
@@ -69,7 +69,7 @@ public class Events {
         }
 
 
-        if (message.equals(BOT_PREFIX + "firehelp")) {
+        if (message.toUpperCase().equals(BOT_PREFIX + "FIREHELP")) {
 
             String s = "```Help for FireBot9K:" + '\n' +
                     "!Reddit <Subreddit> <Number of Submissions(opt)>."+
@@ -80,13 +80,13 @@ public class Events {
             BotUtils.sendMessage(event.getChannel(), s);
         }
 
-        if (message.startsWith(BOT_PREFIX + "Reddit")) {
+        if (message.toUpperCase().startsWith(BOT_PREFIX + "REDDIT")) {
 
             RedditCommand rcmd = new RedditCommand();
             rcmd.reddit(event);
         }
 
-        if (message.equals(BOT_PREFIX + "ThinkingSpinner")) {
+        if (message.toUpperCase().equals(BOT_PREFIX + "THINKINGSPINNER")) {
 
 
             EmbedBuilder embedBuilder = new EmbedBuilder();
@@ -97,7 +97,7 @@ public class Events {
 
 
         }
-        if (message.equals(BOT_PREFIX + "ThinkingWithGlitches")) {
+        if (message.toUpperCase().equals(BOT_PREFIX + "THINKINGWITHGLITCHES")) {
 
             EmbedBuilder embedBuilder = new EmbedBuilder();
             embedBuilder.withColor(255, 127, 71);
@@ -105,14 +105,27 @@ public class Events {
 
             RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
         }
-        if (message.equals(BOT_PREFIX+"Torrents")){
+        if (message.toUpperCase().equals(BOT_PREFIX+"TORRENTS")){
 
             EmbedBuilder embedBuilder = new EmbedBuilder();
             embedBuilder.withColor(255, 127, 71);
 
             embedBuilder.withImage("http://i.imgur.com/fcl201Q.gif");
-            embedBuilder.withTitle("We do not talk about Torrents or Piracy");
-            embedBuilder.withFooterText(" Safety jim will Come after you");
+            embedBuilder.withTitle("We do not talk about Torrents or Piracy, or any other illegal/shady things. ");
+            embedBuilder.withFooterText(" Safety jim will Come after you!");
+
+            RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
+
+        }
+       /** if(message.toUpperCase().equals(BOT_PREFIX+"FIRE MATH")){
+
+        FireMath fireMath = new FireMath();
+
+        fireMath.fireMath(message);
+
+            EmbedBuilder embedBuilder = new EmbedBuilder();
+            embedBuilder.withColor(255, 127, 71);
+            embedBuilder.withTitle((String.valueOf(fireMath.fireMath(message))));
 
             RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
 
@@ -138,5 +151,5 @@ public class Events {
      return permission;
      }**/
 
-
+    }
 }
