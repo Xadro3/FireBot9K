@@ -1,21 +1,36 @@
 package com.github.xadro3.firebot9k;
 
 
+import org.tritonus.share.ArraySet;
 import sx.blah.discord.api.events.EventSubscriber;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 import sx.blah.discord.util.EmbedBuilder;
 import sx.blah.discord.util.RequestBuffer;
+import org.iq80.leveldb.DB;
+import org.iq80.leveldb.DBIterator;
+import org.iq80.leveldb.Options;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
 
 import static com.github.xadro3.firebot9k.BotUtils.BOT_PREFIX;
+import static org.fusesource.leveldbjni.JniDBFactory.asString;
+import static org.fusesource.leveldbjni.JniDBFactory.factory;
 
 
 public class Events {
 
 
     @EventSubscriber
-    public void messageReceived(MessageReceivedEvent event) {
+    public void messageReceived(MessageReceivedEvent event) throws IOException {
 
         String message = event.getMessage().getContent();
+
+        SwearJar swearJar = new SwearJar();
+
+        swearJar.isItASwearWord(event);
+
 
         /**  if(message.startsWith(BOT_PREFIX+"ChangePrefix")&& checkPermission(event.getAuthor(), "Prefix")){
 
@@ -117,6 +132,64 @@ public class Events {
             RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
 
         }
+
+        if (message.toUpperCase().equals(BOT_PREFIX+"JAR STATS")){
+
+
+
+
+            Options options = new Options();
+            options.createIfMissing(true);
+            DB db = factory.open(new File("swearer.db"), options);
+
+            Hashtable<String, Integer> hashtable = new Hashtable<>();
+
+            try {
+
+                DBIterator iterator = db.iterator();
+
+
+                try {
+                    for (iterator.seekToFirst(); iterator.hasNext(); iterator.next()) {
+
+                        String key = asString(iterator.peekNext().getKey());
+                        String value = asString(iterator.peekNext().getValue());
+
+                        hashtable.put(key,Integer.parseInt(value));
+
+                    }
+                } finally {
+
+                    iterator.close();
+                }
+
+            }finally {
+                db.close();
+            }
+
+
+
+
+            EmbedBuilder embedBuilder = new EmbedBuilder();
+            embedBuilder.withColor(255, 127, 71);
+
+            embedBuilder.withTitle("Your Karma");
+            embedBuilder.appendField(event.getAuthor().getDisplayName(event.getGuild()),
+                    String.valueOf(hashtable.get(event.getAuthor().getDisplayName(event.getGuild()))),true);
+
+
+            RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
+
+
+        }
+
+
+
+
+
+
+
+
        /** if(message.toUpperCase().equals(BOT_PREFIX+"FIRE MATH")){
 
         FireMath fireMath = new FireMath();
