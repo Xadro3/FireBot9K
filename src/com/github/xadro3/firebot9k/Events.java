@@ -174,8 +174,8 @@ public class Events {
             embedBuilder.withColor(255, 127, 71);
 
             embedBuilder.withTitle("Your Karma");
-            embedBuilder.appendField(event.getAuthor().getDisplayName(event.getGuild()),
-                    String.valueOf(hashtable.get(event.getAuthor().getDisplayName(event.getGuild()))),true);
+            embedBuilder.appendField(event.getAuthor().getName(),
+                    String.valueOf(hashtable.get(event.getAuthor().getStringID())),true);
 
 
             RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));

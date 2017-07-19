@@ -19,7 +19,7 @@ import static org.fusesource.leveldbjni.JniDBFactory.*;
  */
 public class SwearJar {
 
-    static Set<String> swearwords = new ArraySet<>();
+
 
     public void isItASwearWord(MessageReceivedEvent event) throws IOException {
 
@@ -53,7 +53,7 @@ public class SwearJar {
 
             String[] toCheck = event.getMessage().getContent().toString().split(" ");
 
-            String swearerName = event.getAuthor().getDisplayName(event.getGuild());
+            String swearerName = event.getAuthor().getStringID();
 
             Options options = new Options();
             options.createIfMissing(true);
