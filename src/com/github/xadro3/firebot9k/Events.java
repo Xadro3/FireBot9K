@@ -1,22 +1,14 @@
 package com.github.xadro3.firebot9k;
 
 
-import org.tritonus.share.ArraySet;
 import sx.blah.discord.api.events.EventSubscriber;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 import sx.blah.discord.util.EmbedBuilder;
 import sx.blah.discord.util.RequestBuffer;
-import org.iq80.leveldb.DB;
-import org.iq80.leveldb.DBIterator;
-import org.iq80.leveldb.Options;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.*;
 
 import static com.github.xadro3.firebot9k.BotUtils.BOT_PREFIX;
-import static org.fusesource.leveldbjni.JniDBFactory.asString;
-import static org.fusesource.leveldbjni.JniDBFactory.factory;
 
 
 public class Events {
@@ -87,9 +79,9 @@ public class Events {
         if (message.toUpperCase().equals(BOT_PREFIX + "FIREHELP")) {
 
             String s = "```Help for FireBot9K:" + '\n' +
-                    "!Reddit <Subreddit> <Number of Submissions(opt)>."+
+                    "!Reddit <Subreddit> <Number of Submissions(opt)>." +
                     '\n' + "!Torrents, posts a torrent info."
-                    +'\n' + "!ThinkingWirhGlitches: Posts the Meme."
+                    + '\n' + "!ThinkingWirhGlitches: Posts the Meme."
                     + '\n' + "!ThinkingSpinner: Posts the Meme.```";
 
             BotUtils.sendMessage(event.getChannel(), s);
@@ -120,7 +112,7 @@ public class Events {
 
             RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
         }
-        if (message.toUpperCase().equals(BOT_PREFIX+"TORRENTS")){
+        if (message.toUpperCase().equals(BOT_PREFIX + "TORRENTS")) {
 
             EmbedBuilder embedBuilder = new EmbedBuilder();
             embedBuilder.withColor(255, 127, 71);
@@ -133,86 +125,46 @@ public class Events {
 
         }
 
-        if (message.toUpperCase().equals(BOT_PREFIX+"JAR STATS")){
+        if (message.toUpperCase().equals(BOT_PREFIX + "JAR STATS")) {
 
 
+            swearJar.checkStats(event);
 
 
-            Options options = new Options();
-            options.createIfMissing(true);
-            DB db = factory.open(new File("swearer.db"), options);
+        }
 
-            Hashtable<String, Integer> hashtable = new Hashtable<>();
-
-            try {
-
-                DBIterator iterator = db.iterator();
+        if (message.toUpperCase().contains(BOT_PREFIX + "JAR ADD")) {
 
 
-                try {
-                    for (iterator.seekToFirst(); iterator.hasNext(); iterator.next()) {
-
-                        String key = asString(iterator.peekNext().getKey());
-                        String value = asString(iterator.peekNext().getValue());
-
-                        hashtable.put(key,Integer.parseInt(value));
-
-                    }
-                } finally {
-
-                    iterator.close();
-                }
-
-            }finally {
-                db.close();
-            }
-
-
-
-
-            EmbedBuilder embedBuilder = new EmbedBuilder();
-            embedBuilder.withColor(255, 127, 71);
-
-            embedBuilder.withTitle("Your Karma");
-            embedBuilder.appendField(event.getAuthor().getName(),
-                    String.valueOf(hashtable.get(event.getAuthor().getStringID())),true);
-
-
-            RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
+            swearJar.addWord(event);
 
 
         }
 
 
+        /** if(message.toUpperCase().equals(BOT_PREFIX+"FIRE MATH")){
+
+         FireMath fireMath = new FireMath();
+
+         fireMath.fireMath(message);
+
+         EmbedBuilder embedBuilder = new EmbedBuilder();
+         embedBuilder.withColor(255, 127, 71);
+         embedBuilder.withTitle((String.valueOf(fireMath.fireMath(message))));
+
+         RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
+
+         }
+
+         }
+
+
+         /** public boolean checkPermission(IUser user, String command){
 
 
 
 
-
-
-       /** if(message.toUpperCase().equals(BOT_PREFIX+"FIRE MATH")){
-
-        FireMath fireMath = new FireMath();
-
-        fireMath.fireMath(message);
-
-            EmbedBuilder embedBuilder = new EmbedBuilder();
-            embedBuilder.withColor(255, 127, 71);
-            embedBuilder.withTitle((String.valueOf(fireMath.fireMath(message))));
-
-            RequestBuffer.request(() -> event.getChannel().sendMessage(embedBuilder.build()));
-
-        }
-
-    }
-
-
-    /** public boolean checkPermission(IUser user, String command){
-
-
-
-
-     boolean permission;
+         boolean permission;
 
 
 
@@ -221,8 +173,8 @@ public class Events {
 
 
 
-     return permission;
-     }**/
+         return permission;
+         }**/
 
     }
 }
